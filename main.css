@@ -19,7 +19,7 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     padding: 40px;
-    float: left;
+    /* float: left; */
     position: fixed; /* keeps nav from scrolling */
     line-height: 2.3em;
 }
@@ -43,11 +43,12 @@ nav {
     margin-right: 20px;
 }
 
-/* MAIN SECTION */
-.main-section {
+/* CONTENT SECTION */
+.content-section {
     background-color: whitesmoke;
     min-height: 100vh;
     width: calc(100vw - 240px);
+    /* float: left; */
     float: right;
     display: flex;
     flex-wrap: wrap;
@@ -55,7 +56,7 @@ nav {
 }
 
 /* photos */
-.main-section > div {
+.content-section > div {
     height: 265px;
     width: 400px;
     background-color: teal;
@@ -63,7 +64,7 @@ nav {
 }
 
 /* text section above photos */
-.main-section > div.text {
+.content-section > div.text {
     height: 80px;
     width: calc(100vw - 610px);
     background-color: whitesmoke;
