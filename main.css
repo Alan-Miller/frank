@@ -32,7 +32,7 @@ nav {
 }
 
 .media {
-    display: flex; /* .media has unique display value */
+    display: flex;
 }
 
 /* media divs (social media icons) */
@@ -51,22 +51,30 @@ nav {
     /* float: left; */
     float: right;
     display: flex;
-    flex-wrap: wrap;
-    padding: 35px 180px;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 0;
 }
 
+
+.photos {
+    width: 840px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
 /* photos */
-.content-section > div {
+.photos > div {
     height: 265px;
     width: 400px;
-    background-color: teal;
     margin: 10px;
+    background-color: teal;
 }
 
 /* text section above photos */
-.content-section > div.text {
+.content-section .text {
     height: 80px;
-    width: calc(100vw - 610px);
+    width: 820px; /* width of 2 photos plus the margins between them */
     background-color: whitesmoke;
     color: rgba(100, 100, 100, 1);
     border-bottom: 1.3px solid rgba(100, 100, 100, 0.5);
