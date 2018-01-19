@@ -1,0 +1,70 @@
+/* font default values */
+html {
+    font-family: sans-serif;
+    color: rgba(255, 255, 255, .8);
+}
+
+/* MAIN is size of entire window */
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* NAV */
+nav {
+    width: 240px;
+    height: 100vh;
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    float: left;
+    position: fixed; /* keeps nav from scrolling */
+}
+
+/* containers to separate nav content */
+.frank, .links, .media {
+    line-height: 2em;
+}
+.media {
+    display: flex; /* .media has unique display value */
+}
+
+/* media divs (social media icons) */
+.media > div {
+    background-color: rgba(255, 255, 255, .8);
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+}
+
+/* MAIN SECTION */
+.main-section {
+    background-color: whitesmoke;
+    min-height: 100vh;
+    width: calc(100vw - 240px);
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 35px 180px;
+}
+
+/* photos */
+.main-section > div {
+    height: 265px;
+    width: 400px;
+    background-color: teal;
+    margin: 10px;
+}
+
+/* text section above photos */
+.main-section > div.text {
+    height: 80px;
+    width: calc(100vw - 610px);
+    background-color: whitesmoke;
+    color: rgba(100, 100, 100, 1);
+    line-height: 2em;
+    border-bottom: 1.3px solid rgba(100, 100, 100, 0.5);
+    margin-bottom: 20px;
+}
