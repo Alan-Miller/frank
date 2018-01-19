@@ -21,12 +21,16 @@ nav {
     padding: 40px;
     float: left;
     position: fixed; /* keeps nav from scrolling */
+    line-height: 2.3em;
 }
 
-/* containers to separate nav content */
-.frank, .links, .media {
-    line-height: 2em;
+/* hover over links to get cursor pointer and underline effect */
+.links span:hover {
+    cursor: pointer;
+    padding-bottom: 2px;
+    border-bottom: 2px solid rgba(255, 255, 255, .3);
 }
+
 .media {
     display: flex; /* .media has unique display value */
 }
@@ -64,7 +68,7 @@ nav {
     width: calc(100vw - 610px);
     background-color: whitesmoke;
     color: rgba(100, 100, 100, 1);
-    line-height: 2em;
     border-bottom: 1.3px solid rgba(100, 100, 100, 0.5);
     margin-bottom: 20px;
+    line-height: 2em;
 }
